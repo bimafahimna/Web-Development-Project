@@ -3,7 +3,7 @@ This is my personal Web Development Repository
 
 ## What i have learned
 
-- Basic Programming Javascript: Conditional, Array, Function, Object, Functional Programming, Asynchronous, Object-oriented Programming
+- Basic Javascript Programming : Conditional, Array, Function, Object, Functional Programming, Asynchronous, Object-oriented Programming
 
 - Backend: MySQL, MongoDB, Node.js, Express.js, Web Service API, Middleware, REST API, CORS, ORM Sequelize, ORM Prisma
   
