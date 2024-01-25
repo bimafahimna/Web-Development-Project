@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="form.html">Register</a></li>
+        <li><a href="article.html">Article</a></li>
+    </ul>
+    <br><br>
+
+    <hr class="hr1">
+    <h1>Register Akun Baru!</h1>
+    <h2>Isilah form dibawah ini</h2>
+    <form method="post" action="process.html">
+        <label for="fname">First Name :</label>
+        <br><br>
+        <input id="fname" name="firstname" type="text" value=""/>
+        <br><br>
+        
+        <label for="lname">Last Name :</label>
+        <br><br>
+        <input id="lname" name="lastname" type="text" value=""/>
+        <br><br>
+        
+        <label for="gender">Gender :</label>
+        <br><br>
+
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="Others">Others</label>
+        <br><br>
+
+        <label for="nationality">Nationality :</label>
+        <br><br>
+        <select name="nationality" id="nationality">
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American">American</option>
+            <option value="Indonesia">Indonesia</option>
+        </select>
+        <br><br>
+
+        <label for="fokusbelajar">Sedang Fokus Belajar :</label>
+        <br><br>
+        <select name="fokusbelajar" id="fokusbelajar">
+            <option value="NodeJS">NodeJS</option>
+            <option value="ReactJS">ReactJS</option>
+        </select>
+        <br><br>
+
+        <label for="language">Language Spoken :</label>
+        <br><br>
+        <input type="checkbox" id="bhs_indonesia" name="language1" value="Bahasa Indonesia">
+        <label for="bhs_indonesia">Bahasa Indonesia</label>
+        <input type="checkbox" id="english" name="language2" value="English">
+        <label for="english">English</label>
+        <input type="checkbox" id="japanese" name="language3" value="Japanese">
+        <label for="japanese">Japanese</label>
+        <br><br>
+
+        <label for="deskripsidiri">Deskripsi Diri Saya:</label>
+        <br><br>
+        <textarea name="deskripsidiri" id="deskripsidiri" cols="40" rows="5"></textarea>
+        <br><br>
+
+        <button>Register</button>
+
+
+        <div class="footer">
+            copyright &copy; 2023 by Sanbercode
+        </div>
+    </form>
+</body>
+</html>
