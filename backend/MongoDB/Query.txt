@@ -1,0 +1,44 @@
+/ Buat Database /
+
+use myshop
+
+/ Buat Collection dan Memasukkan Data /
+
+db.users.insert({name:"John Doe",email:"john@doe.com",password:"john123"})
+db.users.insert({name:"Jane Doe",email:"jane@doe.com",password:"jenita123"})
+
+
+db.categories.insert({name:["gadget","cloth","men","women","branded"]})
+
+
+db.items.insertMany([{name:"Sumsang b50",description:"hape keren dari merek sumsang",price:4000000,stock:100},
+{name:"Uniklooh",description:"baju keren dari brand ternama",price:500000,stock:50},
+{name:"IMHO Watch",description:"jam tangan anak yang jujur banget",price:2000000,stock:10}])
+
+/ Mengambil Data Users /
+
+db.users.find({},{password:0,_id:0})
+
+/ Mengambil data items /
+
+db.items.find({price:{$gt:1000000}})
+
+db.items.find({name:/sang/})
+
+/ Mengubah data dari Database /
+
+db.items.findAndModify({
+    query: {name:/sang/},
+    sort: { rating: 1 },
+    update: { $set:{  price: 2500000 }},
+    new: true
+})
+
+
+
+
+
+
+
+
+

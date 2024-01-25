@@ -1,0 +1,66 @@
+create database myshop;
+
+use myshop;
+create table users(
+	id int primary key auto_increment,
+	name varchar(255) not null,
+	email varchar(255) not null,
+	password varchar(255) not null
+);
+
+create table items(
+	id int primary key auto_increment,
+	name varchar(255) not null,
+	description varchar(255) not null,
+	price int not null,
+	stock int not null
+);
+
+create table categories(
+	id int primary key auto_increment,
+	name varchar(255) not null
+);
+
+
+insert into users (name,email,password)
+values ('John Doe','john@doe.com','john123'),
+('Jane Doe','jane@doe.com','jenita123')
+;
+
+insert into items (name,description,price,stock)
+values ('Sumsang b50','hape keren dari merek sumsang',4000000,100),
+('Uniklooh','baju keren dari brand ternama',500000,50),
+('IMHO Watch','jam tangan anak yang jujur banget',2000000,10)
+;
+
+insert into categories (name)
+values ('gadget'),
+('cloth'), ('men'),
+('women'), ('branded')
+;
+
+
+select name, email
+from users
+;
+
+select *
+from items
+where
+price > 1000000
+;
+
+select * from items
+where name like '%sang%'
+;
+
+
+update items
+set
+price = 2500000
+where
+id = 1
+;
+
+
+
