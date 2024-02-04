@@ -1,5 +1,5 @@
 # Web-Development-Project
-This is my personal Web Development Repository
+My personal Web Development Repository
 
 ## What i have learned
 
